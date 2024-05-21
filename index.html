@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <header>
+    <div class="left-header-items">
+      <img class="icon-menu" id="icon-menu" src="images/icon-menu.svg" alt="icon-menu">
+      <img src="images/logo.svg" alt="Logo">
+    <nav>
+      <a href="#">Collections</a>
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    </div>
+    <div class="avatar-div">
+      <div class="header-image-cart-container">
+        <img class="header-image-cart" src="images/icon-cart.svg" alt="icon-cart">
+        <div class="cart-notification">0</div>
+      </div>    
+      <img class="image-avatar" src="images/image-avatar.png" alt="image-avatar">
+    </div>
+  </header>
+
+  
+  <div class="cart">
+    <h4>Cart</h4>
+    <hr>
+    <div class="cart-container">
+      <div class="product-choice">
+        <p class="empty-message">Your cart is empty.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="navigation">
+    <div class="icon-close-div">
+      <img id="icon-close" src="images/icon-close.svg" alt="icon-close">
+    </div>
+    <div class="mobile-nav">
+      <a href="#">Collections</a>
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+
+  <div class="lightbox">
+    <div class="lightbox-content">
+        <span class="close-button">
+          <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill-rule="evenodd"/></svg>
+        </span>
+        <svg class="lightbox-icon-previous"  width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+        <img class="lightbox-main-img" src="images/image-product-1.jpg" alt="image-product-1">
+        <svg class="lightbox-icon-next" width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+
+        <div class="lightbox-thumbnails">
+          <img src="images/image-product-1.jpg" alt="image-product-1">
+          <img src="images/image-product-2.jpg" alt="image-product-2">
+          <img src="images/image-product-3.jpg" alt="image-product-3">
+          <img src="images/image-product-4.jpg" alt="image-product-4">
+      </div>
+    </div>
+</div>
+
+
+  <section>
+    <div class="products-container">
+      <img class="icon-previous" src="images/icon-previous.svg" alt="icon-previous">
+      <div class="main-img"> 
+        <img src="images/image-product-1.jpg" alt="image-product-1">
+      </div>
+      <img class="icon-next" src="images/icon-next.svg" alt="icon-next">
+      <div class="thumbnails">
+        <img src="images/image-product-1-thumbnail.jpg" alt="image-product-1-thumbnail">
+        <img src="images/image-product-2-thumbnail.jpg" alt="image-product-2-thumbnail">
+        <img src="images/image-product-3-thumbnail.jpg" alt="image-product-3-thumbnail">
+        <img src="images/image-product-4-thumbnail.jpg" alt="image-product-4-thumbnail">
+      </div>
+    </div>
+
+    <main>
+      <h1>Sneaker Company</h1>
+      <h2>Fall Limited Edition Sneakers</h2>
+      <p class="main-text">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+      <div class="prices">
+          <div class="price-and-discount">
+            <h3>$125.00</h3>
+            <p class="discount">50%</p>
+          </div>
+          <p class="real-price">$250.00</p>
+      </div>
+      <div class="choice-div">
+        <div class="counter">
+          <a href="#"><img class="minus-icon" src="images/icon-minus.svg" alt="icon-minus"></a>
+          <a class="counter-zero" href="#">0</a>
+          <a href="#"><img class="plus-icon" src="images/icon-plus.svg" alt="icon-plus"></a>
+        </div>
+        <button class="addToCart" data-thumbnail-src="chemin/vers/image.jpg" data-thumbnail-alt="Description de l'image">
+          <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#FFF" fill-rule="nonzero"/>
+          </svg>
+          Add to cart
+      </button>      
+      </div>
+      </main>
+  </section> 
+
+</body>
+</html>
